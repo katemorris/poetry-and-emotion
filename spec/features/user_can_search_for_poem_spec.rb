@@ -11,10 +11,10 @@ describe "As a User" do
       expect(current_path).to eq('/search')
       expect(page).to have_css('.poem', count: 10)
       within ('#poem-1') do
-        expect(page).to have_content('Title: Not at Home to Callers')
-        expect(page).to have_content('Author: Emily Dickinson')
-        expect(page).to have_content('Poem: Not at Home to Callers, Says the Naked Tree --, Bonnet due in April --, Wishing you Good Day --')
-        expect(page).to have_content('Tone: Sad')
+        expect(page).to have_content('Title: Defrauded I a Butterfly --')
+        expect(page).to have_content('by Emily Dickinson')
+        expect(page).to have_content('Poem: Defrauded I a Butterfly --, The lawful Heir -- for Thee --')
+        expect(page).to have_content('Tone: Joy')
       end
     end
   end
