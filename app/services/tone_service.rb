@@ -22,7 +22,7 @@ class ToneService
       content_type: "application/json"
     )
 
-    puts JSON.pretty_generate(tone.result)
+    JSON.parse(JSON.pretty_generate(tone.result["document_tone"]), symbolize_names: true)
   end
 
 end
