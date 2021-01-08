@@ -1,0 +1,10 @@
+<h1>First 10 Poems Found</h1>
+<ol>
+  <% @poems.each_with_index do |poem, index| %>
+    <div class="poem">
+      <li id="poem-<%= index %>">Title: <%= poem.title %> by <%= poem.author %>
+      <br>Tone: <%= poem.tones %>
+      <br>Poem: <%= poem.poem_line %></li>
+    </div>
+  <% end %>
+</ol>
