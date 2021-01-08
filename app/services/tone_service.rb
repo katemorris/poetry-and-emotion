@@ -7,7 +7,7 @@ class ToneService
 
   def self.tone_analyzer(line)
     authenticator = Authenticators::IamAuthenticator.new(
-      apikey: "q1uI4zGkTXu6_EKYEWlr0cgS8CtLIQiloJDz4hHKCfrJ"
+      apikey: ENV["IBM_WATSON_KEY"]
     )
 
     tone_analyzer = ToneAnalyzerV3.new(
